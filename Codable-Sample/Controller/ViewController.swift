@@ -8,18 +8,37 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    private let provider = TableViewProvider()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.setup()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func setup() {
+        self.tableView.delegate = self
+        self.tableView.dataSource = self.provider
+        self.provider.setList(listData: ["通常スタートJSON", "配列スタートJSON"])
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
+}
 
-
+extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            print("通常スタートJSONのマッピング")
+        case 1:
+            print("配列スタートJSONのマッピング")
+        default:
+            return
+        }
+    }
 }
 

@@ -16,6 +16,7 @@
 		45AB75ED20C3DE800064D4EA /* UserData-Sample-Array.json in Resources */ = {isa = PBXBuildFile; fileRef = 45AB75EB20C3DE800064D4EA /* UserData-Sample-Array.json */; };
 		45AB75EF20C3EA610064D4EA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AB75EE20C3EA610064D4EA /* UserData.swift */; };
 		45AB75F120C3F15A0064D4EA /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AB75F020C3F15A0064D4EA /* DataSource.swift */; };
+		45AB75F320C4026F0064D4EA /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AB75F220C4026F0064D4EA /* TableViewProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		45AB75EB20C3DE800064D4EA /* UserData-Sample-Array.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "UserData-Sample-Array.json"; sourceTree = "<group>"; };
 		45AB75EE20C3EA610064D4EA /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		45AB75F020C3F15A0064D4EA /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		45AB75F220C4026F0064D4EA /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		45AB75E720C3D9010064D4EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				45AB75F220C4026F0064D4EA /* TableViewProvider.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45AB75EF20C3EA610064D4EA /* UserData.swift in Sources */,
+				45AB75F320C4026F0064D4EA /* TableViewProvider.swift in Sources */,
 				45AB75D620C3D8560064D4EA /* ViewController.swift in Sources */,
 				45AB75F120C3F15A0064D4EA /* DataSource.swift in Sources */,
 				45AB75D420C3D8560064D4EA /* AppDelegate.swift in Sources */,

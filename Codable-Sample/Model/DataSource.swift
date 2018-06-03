@@ -34,7 +34,7 @@ final class DataSource: NSObject {
     /// 配列スタートの場合
     private func create() -> [UserDataResponseArray]? {
         
-        guard let filePath = Bundle.main.path(forResource: "UserData-Sample", ofType: "json") else {
+        guard let filePath = Bundle.main.path(forResource: "UserData-Sample-Array", ofType: "json") else {
             fatalError("json is not found in main Bundle.")
         }
         
