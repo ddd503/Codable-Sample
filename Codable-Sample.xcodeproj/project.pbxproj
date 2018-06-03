@@ -12,6 +12,8 @@
 		45AB75D920C3D8560064D4EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AB75D720C3D8560064D4EA /* Main.storyboard */; };
 		45AB75DB20C3D8560064D4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AB75DA20C3D8560064D4EA /* Assets.xcassets */; };
 		45AB75DE20C3D8560064D4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AB75DC20C3D8560064D4EA /* LaunchScreen.storyboard */; };
+		45AB75EC20C3DE800064D4EA /* UserData-Sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 45AB75EA20C3DE800064D4EA /* UserData-Sample.json */; };
+		45AB75ED20C3DE800064D4EA /* UserData-Sample-Array.json in Resources */ = {isa = PBXBuildFile; fileRef = 45AB75EB20C3DE800064D4EA /* UserData-Sample-Array.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		45AB75DA20C3D8560064D4EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45AB75DD20C3D8560064D4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45AB75DF20C3D8560064D4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45AB75EA20C3DE800064D4EA /* UserData-Sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "UserData-Sample.json"; sourceTree = "<group>"; };
+		45AB75EB20C3DE800064D4EA /* UserData-Sample-Array.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "UserData-Sample-Array.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,9 @@
 		45AB75D220C3D8560064D4EA /* Codable-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				45AB75EB20C3DE800064D4EA /* UserData-Sample-Array.json */,
+				45AB75EA20C3DE800064D4EA /* UserData-Sample.json */,
+				45AB75E920C3DE630064D4EA /* Resource */,
 				45AB75E820C3D9070064D4EA /* Model */,
 				45AB75E720C3D9010064D4EA /* View */,
 				45AB75E620C3D8FD0064D4EA /* Controller */,
@@ -94,6 +101,13 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		45AB75E920C3DE630064D4EA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +168,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45AB75EC20C3DE800064D4EA /* UserData-Sample.json in Resources */,
+				45AB75ED20C3DE800064D4EA /* UserData-Sample-Array.json in Resources */,
 				45AB75DE20C3D8560064D4EA /* LaunchScreen.storyboard in Resources */,
 				45AB75DB20C3D8560064D4EA /* Assets.xcassets in Resources */,
 				45AB75D920C3D8560064D4EA /* Main.storyboard in Resources */,

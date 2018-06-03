@@ -1,0 +1,21 @@
+{
+	"resultCount": 1,
+	"users": [
+		{
+		"id":3224350082,
+         "id_str":"ddd503",
+         "name":"d.kawahara",
+         "screen_name":"d.k",
+         "location":"komatsu, Ishikawa",
+         "description":"Nice to meet you.",
+         "url":"https://github.com/ddd503",
+         "entities":{  
+            "description":{  
+               "urls":[  
+
+               ]
+            }
+         }
+     }
+	]
+}
