@@ -1,9 +1,8 @@
-[  
-   {  
-      "created_at":"Thu May 03 15:07:23 +0000 2018",
-      "id":503,
-      "user":{  
-         "id":3224350082,
+{
+	"userCount": 1,
+	"users": [
+		{
+		"id":3224350082,
          "id_str":"ddd503",
          "name":"d.kawahara",
          "screen_name":"d.k",
@@ -16,10 +15,7 @@
 
                ]
             }
-         },
-      },
-      "geo":null,
-      "coordinates":null,
-      "place":null,
-   }
-]
+         }
+     }
+	]
+}

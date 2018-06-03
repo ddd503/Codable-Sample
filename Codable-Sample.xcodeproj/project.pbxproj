@@ -14,6 +14,7 @@
 		45AB75DE20C3D8560064D4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AB75DC20C3D8560064D4EA /* LaunchScreen.storyboard */; };
 		45AB75EC20C3DE800064D4EA /* UserData-Sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 45AB75EA20C3DE800064D4EA /* UserData-Sample.json */; };
 		45AB75ED20C3DE800064D4EA /* UserData-Sample-Array.json in Resources */ = {isa = PBXBuildFile; fileRef = 45AB75EB20C3DE800064D4EA /* UserData-Sample-Array.json */; };
+		45AB75EF20C3EA610064D4EA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AB75EE20C3EA610064D4EA /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		45AB75DF20C3D8560064D4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45AB75EA20C3DE800064D4EA /* UserData-Sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "UserData-Sample.json"; sourceTree = "<group>"; };
 		45AB75EB20C3DE800064D4EA /* UserData-Sample-Array.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "UserData-Sample-Array.json"; sourceTree = "<group>"; };
+		45AB75EE20C3EA610064D4EA /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,6 @@
 		45AB75D220C3D8560064D4EA /* Codable-Sample */ = {
 			isa = PBXGroup;
 			children = (
-				45AB75EB20C3DE800064D4EA /* UserData-Sample-Array.json */,
-				45AB75EA20C3DE800064D4EA /* UserData-Sample.json */,
 				45AB75E920C3DE630064D4EA /* Resource */,
 				45AB75E820C3D9070064D4EA /* Model */,
 				45AB75E720C3D9010064D4EA /* View */,
@@ -99,6 +99,7 @@
 		45AB75E820C3D9070064D4EA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				45AB75EE20C3EA610064D4EA /* UserData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -106,6 +107,8 @@
 		45AB75E920C3DE630064D4EA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				45AB75EB20C3DE800064D4EA /* UserData-Sample-Array.json */,
+				45AB75EA20C3DE800064D4EA /* UserData-Sample.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45AB75EF20C3EA610064D4EA /* UserData.swift in Sources */,
 				45AB75D620C3D8560064D4EA /* ViewController.swift in Sources */,
 				45AB75D420C3D8560064D4EA /* AppDelegate.swift in Sources */,
 			);
