@@ -51,6 +51,57 @@
             </objects>
             <point key="canvasLocation" x="1079.2" y="132.68365817091455"/>
         </scene>
+        <!--Result View Controller-->
+        <scene sceneID="pJf-qM-rkt">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" id="Y7K-jl-k7i" customClass="ResultViewController" customModule="Codable_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kZQ-MQ-FRY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FVo-Vf-Xrz">
+                                <rect key="frame" x="30" y="40" width="325" height="427"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCD-cf-p6D">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="142.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyS-8L-zHW">
+                                        <rect key="frame" x="0.0" y="142.5" width="325" height="142"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8w4-FR-HM6">
+                                        <rect key="frame" x="0.0" y="284.5" width="325" height="142.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FVo-Vf-Xrz" firstAttribute="leading" secondItem="sdc-vP-kma" secondAttribute="leading" constant="30" id="1hP-C3-d6u"/>
+                            <constraint firstItem="FVo-Vf-Xrz" firstAttribute="top" secondItem="sdc-vP-kma" secondAttribute="top" constant="20" id="jvr-6I-uXn"/>
+                            <constraint firstItem="sdc-vP-kma" firstAttribute="trailing" secondItem="FVo-Vf-Xrz" secondAttribute="trailing" constant="20" id="uzz-Vj-OGG"/>
+                            <constraint firstItem="sdc-vP-kma" firstAttribute="bottom" secondItem="FVo-Vf-Xrz" secondAttribute="bottom" constant="200" id="x9d-T5-R17"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sdc-vP-kma"/>
+                    </view>
+                    <connections>
+                        <outlet property="backBornLabel" destination="zyS-8L-zHW" id="IW7-4s-5qg"/>
+                        <outlet property="githubURLLabel" destination="8w4-FR-HM6" id="NSb-dt-VOI"/>
+                        <outlet property="nameLabel" destination="TCD-cf-p6D" id="et1-6B-M8a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I2b-1w-e2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801" y="134"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="gGw-9w-GbD">
             <objects>

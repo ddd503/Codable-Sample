@@ -6,11 +6,11 @@
 //  Copyright © 2018年 kawaharadai. All rights reserved.
 //
 
-// 単体スタートの場合のモデル
+// 単体スタートの場合のモデル（配列を取得する）
 struct UserDataResponse: Codable {
     
     var userCount: Int?
-    let userData: [User]
+    let userData: [User] // 配列ごと
     
     struct User: Codable {
         var userName: String?
@@ -29,11 +29,11 @@ struct UserDataResponse: Codable {
     }
 }
 
-// 配列スタートの場合のモデル
+// 配列スタートの場合のモデル（単一オブジェクトごとの配列をマッピング時に作る）
 struct UserDataResponseArray: Codable {
     
     var userCount: Int?
-    let userData: User?
+    let userData: User? // 単一
     
     struct User: Codable {
         var userName: String?
@@ -45,5 +45,9 @@ struct UserDataResponseArray: Codable {
             case backbone = "location"
             case githubURL = "url"
         }
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case userData = "user"
     }
 }

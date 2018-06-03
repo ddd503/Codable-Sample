@@ -11,7 +11,7 @@ import UIKit
 final class DataSource: NSObject {
     
     /// ローカルのjsonファイルからユーザーデータを取得してマッピングしてVCに返す
-    private func create() -> UserDataResponse? {
+    static func create1() -> UserDataResponse? {
         
         guard let filePath = Bundle.main.path(forResource: "UserData-Sample", ofType: "json") else {
             fatalError("json is not found in main Bundle.")
@@ -32,7 +32,7 @@ final class DataSource: NSObject {
     }
     
     /// 配列スタートの場合
-    private func create() -> [UserDataResponseArray]? {
+    static func create2() -> [UserDataResponseArray]? {
         
         guard let filePath = Bundle.main.path(forResource: "UserData-Sample-Array", ofType: "json") else {
             fatalError("json is not found in main Bundle.")

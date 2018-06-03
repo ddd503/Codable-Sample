@@ -8,8 +8,13 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+enum JsonType: Int {
+    case normal
+    case arrayStart
+}
 
+final class ViewController: UIViewController {
+    
     @IBOutlet weak var tableView: UITableView!
     private let provider = TableViewProvider()
     
@@ -17,7 +22,15 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         self.setup()
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let indexPathForSelectedRow = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPathForSelectedRow, animated: true)
+        }
+    }
+    
     private func setup() {
         self.tableView.delegate = self
         self.tableView.dataSource = self.provider
@@ -31,14 +44,24 @@ final class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         switch indexPath.row {
-        case 0:
-            print("通常スタートJSONのマッピング")
-        case 1:
-            print("配列スタートJSONのマッピング")
+        case JsonType.normal.rawValue:
+            guard let dataSource = DataSource.create1() else {
+                fatalError("dataSource is nil")
+            }
+            let resultVC = ResultViewController.make(object: dataSource)
+            self.navigationController?.pushViewController(resultVC, animated: true)
+        case JsonType.arrayStart.rawValue:
+            guard let dataSource = DataSource.create2() else {
+                fatalError("dataSource is nil")
+            }
+            let resultVC = ResultViewController.make(object: dataSource[0])
+            self.navigationController?.pushViewController(resultVC, animated: true)
         default:
             return
         }
+        
     }
 }
 
